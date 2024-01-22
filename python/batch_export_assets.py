@@ -1,11 +1,15 @@
 import hou
 import os
 
-
 tool_output_path = "Your/Tool/Output"    
 
 all_textures_output_path = make_folder(tool_output_path, 'Textures')
 all_assets_output_path = make_folder(tool_output_path, 'Assets')
+
+
+def main():
+    # export_textures_and_fbx()
+    # rename_files()
 
 
 def make_folder(directory, folder_name):
@@ -77,7 +81,5 @@ def export_textures_and_fbx():
         fbx_export_node.render((i, i))
        
         
-     
-    
-#export_textures_and_fbx()
-#rename_files()
+if __name__ == '__main__':
+    main()
